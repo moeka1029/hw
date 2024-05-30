@@ -2,6 +2,7 @@ module "route53" {
   source = "./modules/route53"
 
   domain_name = var.domain_name
+  acm = modules.acm.aws
 }
 
 module "acm" {
